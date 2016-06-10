@@ -6,12 +6,18 @@ using System.Threading.Tasks;
 
 namespace COMP_123_S2016_Lesson05
 {
+    /**
+     * <summary>
+     * This class creates an object thet represents a plaing card
+     * </summary>
+     * @class Card
+     */
     public class Card
     {
         //PUBLIC PROPERTIES+++++++++++++++++++++++++++++++++++++++++++
-        public int Face { get; set; }
+        public Faces Face { get; set; }
 
-        public string Suit { get; set; }
+        public Suits Suit { get; set; }
 
         //CONSTRUCTORS++++++++++++++++++++++++++++++++++++++++++++++++
         /**
@@ -19,10 +25,10 @@ namespace COMP_123_S2016_Lesson05
          * This constructor takes two parameters: face and suit to instantiable a Card object
          * </summary>
          * @constructor Card
-         * @param {string} face
-         * @param {string} suit
+         * @param {Faces} face
+         * @param {Suits} suit
          */
-        public Card(int face, string suit)
+        public Card(Faces face, Suits suit)
         {
             this.Face = face;
             this.Suit = suit;

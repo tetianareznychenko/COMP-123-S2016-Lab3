@@ -23,89 +23,23 @@ namespace COMP_123_S2016_Lesson05
 
         public static void Main(string[] args)
         {
-            //create a new istance of the Student class
+            //list that represents List of Cards
 
-            Student tommy = new Student("Tommy", 20, "S123456789");
+            Deck deck = new Deck();//create a deck of cards
 
-            tommy.SaysHello();
+            deck.Display();//display the initial dtate of deck
+            deck.Shuffle();//shuffle the deck
+            deck.Display();//display the deck again
 
+            Card cardDealt = deck.Deal();
+            Console.WriteLine("Card Delt: {0} of {1}", cardDealt.Face, cardDealt.Suit);
             Console.WriteLine();
-
-            tommy.Studies();
-            tommy.Courses.Add(new Course("COMP-123", "Programming 2"));
-            tommy.Courses.Add(new Course("COMP-125", "Client-Side Web Development"));
-            tommy.Courses.Add(new Course("COMP-397", "Web Game Programming"));
-
-            tommy.ShowCourses();
-            Console.WriteLine();
-
-            //create a new istance of the Teacher class
-
-            Teacher tom = new Teacher("Tom", 47, "T123456789");
-            Console.WriteLine();
-            Console.WriteLine();
-
-            tom.SaysHello();
-
-            Console.WriteLine();
-
-            tom.Teaches();
-
-            //Console.WriteLine(person.Name);
-
-            //Set a value in the Name property of the Person class
-            //person.Name = "Tetiana";
-
-            //get the Name value and print to console
-            //Console.WriteLine(person.Name);
-
-            Console.WriteLine();
-
-            List<string> names = new List<string>();
-
-            names.Add("Tom");
-            names.Add("Mary");
-            names.Add("Rutvic");
-
-            int count = 0;
-
-            foreach (string name in names)
-            {
-                Console.WriteLine("Name №" + count + " is " + name);
-                count++;
-            }
+            deck.Display();
 
 
-            List<Card> Deck = new List<Card>();
-            CreateDeck(Deck);
-        }
+        }//end Main
 
-        public static void CreateDeck(List<Card> deck)
-        {
-            string suit = "";
-            for (int i = 0; i < 4; i++)
-            {
-                switch (i)
-                {
-                    case 0:
-                        suit = "hearts";
-                        break;
-                    case 1:
-                        suit = "clubs";
-                        break;
-                    case 2:
-                        suit = "diamonds";
-                        break;
-                    case 3:
-                        suit = "spades";
-                        break;
-                }
-                for (int face = 1; face < 14; face++)
-                {
-                    deck.Add(new Card(face, suit));
-                }
-            }
+        
 
-        }
-    }
-}
+    }//end Program 
+}//end namespace
