@@ -15,7 +15,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="COMP_123_S2016_Lesson05.Program">
-    <Position X="9" Y="1.5" Width="1.5" />
+    <Position X="9" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
@@ -44,6 +44,20 @@
     <TypeIdentifier>
       <HashCode>gAAAAAAAAAAggAAAEAAEAIAAAAAFBAAAAAgAAAgAAEE=</HashCode>
       <FileName>Faces.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="COMP_123_S2016_Lesson05.PlayerStates">
+    <Position X="9" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAgAIAAAgAAAAAAAAAAAAIAAAAAAAAAAAAAI=</HashCode>
+      <FileName>PlayerStates.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="COMP_123_S2016_Lesson05.SceneStates">
+    <Position X="11.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACAAAAAAAAAAAAAAAAAIAAABAAAAAAAAAAA=</HashCode>
+      <FileName>SceneStates.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Font Name="Segoe UI" Size="9" />

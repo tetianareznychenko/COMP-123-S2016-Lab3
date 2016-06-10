@@ -51,35 +51,6 @@ namespace COMP_123_S2016_Lesson05
             }
         }
 
-             
-                /*
-            string suit = "";
-            for (int i = 0; i < 4; i++)
-            {
-                
-                switch (i)
-                {
-                    case 0:
-                        suit = "hearts";
-                        break;
-                    case 1:
-                        suit = "clubs";
-                        break;
-                    case 2:
-                        suit = "diamonds";
-                        break;
-                    case 3:
-                        suit = "spades";
-                        break;
-                }
-                for (int face = 1; face < 14; face++)
-                {
-                    this.Add(new Card(face, suit)); //add aninymous Card object to the list
-                } //end for - face
-
-            }// end for suit
-
-        }//end of Create Deck method
 
          // PUBLIC STATIC METHODS ++++++++++++++++++++++++++++++++++++++++++++++++++++
          /**
@@ -146,7 +117,42 @@ namespace COMP_123_S2016_Lesson05
                 this.RemoveAt(0); //remove the 0th Card from deck
             }
             
-            return returnedCard; 
+            return returnedCard;
+
+
+            /*
+string suit = "";
+for (int i = 0; i < 4; i++)
+{
+
+switch (i)
+{
+    case 0:
+        suit = "hearts";
+        break;
+    case 1:
+        suit = "clubs";
+        break;
+    case 2:
+        suit = "diamonds";
+        break;
+    case 3:
+        suit = "spades";
+        break;
+}
+for (int face = 1; face < 14; face++)
+{
+    this.Add(new Card(face, suit)); //add aninymous Card object to the list
+} //end for - face
+
+}// end for suit
+
+}//end of Create Deck method
+*/
         }
     }
+
+
 }
+
+
